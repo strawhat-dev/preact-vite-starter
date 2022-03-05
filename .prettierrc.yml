@@ -9,9 +9,20 @@ trailingComma: es5
 bracketSpacing: true
 bracketSameLine: false
 arrowParens: always
+xmlSelfClosingSpace: true
+xmlWhitespaceSensitivity: ignore
 importOrderSortSpecifiers: true
 importOrderGroupNamespaceSpecifiers: true
 importOrderParserPlugins:
+  - jsx
   - typescript
   - classProperties
   - decorators-legacy
+importOrder:
+  - '^(.*)[.]css$'
+  - '^(.*)[.]scss$'
+  - '^react$'
+  - '^@(.*)$'
+  - '<THIRD_PARTY_MODULES>'
+  - '^@[/](.*)$'
+  - '^[.][/](.*)$'
