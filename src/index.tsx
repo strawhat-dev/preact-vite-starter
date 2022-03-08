@@ -1,7 +1,9 @@
-import './index.css';
 import { StrictMode } from 'react';
-import App from './App';
 import { render } from 'react-dom';
+import { applyGlobalCss } from '@/lib/stitches';
+import { App } from './App';
+
+applyGlobalCss();
 
 render(
   <StrictMode>

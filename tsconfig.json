@@ -1,10 +1,11 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "jsx": "react-jsx",
-    "module": "ESNext",
-    "target": "ESNext",
+    "module": "esnext",
+    "target": "esnext",
     "moduleResolution": "node",
-    "lib": ["ESNext", "DOM", "DOM.Iterable"],
+    "lib": ["esnext", "dom", "dom.iterable"],
     "strict": true,
     "noEmit": true,
     "allowJs": true,
@@ -13,10 +14,11 @@
     "esModuleInterop": true,
     "isolatedModules": true,
     "resolveJsonModule": true,
-    "useDefineForClassFields": true,
     "allowSyntheticDefaultImports": true,
-    "forceConsistentCasingInFileNames": true
+    "forceConsistentCasingInFileNames": true,
+    "baseUrl": ".",
+    "paths": { "@/*": ["src/*"] }
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "references": [{ "path": "tsconfig.node.json" }]
 }

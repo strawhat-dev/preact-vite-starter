@@ -1,32 +1,28 @@
-import './App.css';
-import { useState } from 'react';
-import logo from './logo.svg';
+import { Box, Text } from '@/components';
+import { CSS } from '@/lib/stitches';
 
-export default () => {
-  const [count, setCount] = useState(0);
+const center: CSS = {
+  top: '50%',
+  left: '50%',
+  position: 'absolute',
+  transform: 'translate(-50%, -50%)',
+};
 
+export const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <code>Vite + React</code>
-        <code>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </code>
-        <code>Edit App.tsx and save to test HMR updates.</code>
-        <p>
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
-      </header>
-    </div>
+    <Box css={center}>
+      <Text h3>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Curabitur vitae nunc
+        sed velit dignissim sodales ut. Pulvinar mattis nunc sed blandit libero
+        volutpat. Consectetur libero id faucibus nisl tincidunt eget nullam non
+        nisi. Magna sit amet purus gravida quis blandit turpis cursus in.
+        Bibendum neque egestas congue quisque egestas. Adipiscing elit
+        pellentesque habitant morbi tristique senectus. Eget velit aliquet
+        sagittis id consectetur. Nec tincidunt praesent semper feugiat nibh.
+        Cras semper auctor neque vitae tempus quam. Dignissim enim sit amet
+        venenatis urna cursus eget nunc scelerisque.
+      </Text>
+    </Box>
   );
 };

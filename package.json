@@ -11,25 +11,26 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "latest",
-    "react-dom": "latest",
+    "@stitches/react": "latest",
     "axios": "latest",
     "dayjs": "latest",
+    "react": "latest",
+    "react-dom": "latest",
     "type-fest": "latest"
   },
   "devDependencies": {
     "@trivago/prettier-plugin-sort-imports": "latest",
     "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
+    "@vitejs/plugin-react": "latest",
     "eslint": "latest",
     "eslint-config-prettier": "latest",
     "eslint-import-resolver-typescript": "latest",
     "eslint-plugin-import": "latest",
     "prettier": "latest",
-    "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "@vitejs/plugin-react": "latest",
     "typescript": "latest",
     "vite": "latest"
   }
