@@ -1,4 +1,4 @@
-import { globalCss } from '@/lib/stitches';
+import { globalCss } from './stitches.config';
 
 export const applyGlobalCss = globalCss({
   h1: { fontSize: '2em', fontWeight: 'bolder' },

@@ -3,6 +3,8 @@ env:
   node: true
   es2021: true
   browser: true
+parser: '@typescript-eslint/parser'
+ignorePatterns: vite.config.ts
 plugins:
   - '@typescript-eslint'
 extends:
@@ -12,15 +14,13 @@ extends:
   - plugin:@typescript-eslint/recommended
   - plugin:@typescript-eslint/recommended-requiring-type-checking
   - prettier
-parser: '@typescript-eslint/parser'
 parserOptions:
-  sourceType: module
   project: tsconfig.json
+  sourceType: module
   ecmaVersion: latest
   ecmaFeatures:
     jsx: true
     impliedStrict: true
-ignorePatterns: vite.config.ts
 settings:
   import/parsers:
     '@typescript-eslint/parser':
