@@ -1,5 +1,4 @@
 /* eslint-disable @typescript-eslint/no-non-null-assertion */
-/* eslint-disable @typescript-eslint/restrict-plus-operands */
 
 // pythonic range
 export const range = (n: number, stop?: number, step?: number) => {
