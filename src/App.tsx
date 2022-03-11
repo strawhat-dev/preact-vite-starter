@@ -11,7 +11,7 @@ const center: CSS = {
 export const App = () => {
   return (
     <Box css={center}>
-      <Text h3>
+      <Text h2>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Curabitur vitae nunc
         sed velit dignissim sodales ut. Pulvinar mattis nunc sed blandit libero
