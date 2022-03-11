@@ -1,15 +1,16 @@
+# https://typescript-eslint.io/docs/linting/
 root: true
 env:
   node: true
-  es2021: true
+  es2022: true
   browser: true
 parser: '@typescript-eslint/parser'
 plugins:
+  - import
   - '@typescript-eslint'
 extends:
   - eslint:recommended
   - plugin:@typescript-eslint/recommended
-  - plugin:@typescript-eslint/recommended-requiring-type-checking
   - plugin:import/recommended
   - plugin:import/typescript
   - plugin:react/recommended
@@ -17,19 +18,20 @@ extends:
   - plugin:react-hooks/recommended
   - prettier
 parserOptions:
-  project:
-    - tsconfig.json
-    - tsconfig.node.json
   sourceType: module
   ecmaVersion: latest
   ecmaFeatures:
     jsx: true
     impliedStrict: true
 settings:
+  react:
+    version: detect
   import/resolver:
     typescript:
       alwaysTryTypes: true
-      project: tsconfig.json
+      project:
+        - tsconfig.json
+        - tsconfig.node.json
   import/parsers:
     '@typescript-eslint/parser':
       - '.ts'

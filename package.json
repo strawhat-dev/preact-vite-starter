@@ -8,7 +8,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "start": "vite preview"
+    "start": "vite preview",
+    "lint": "eslint src --ext .js,.ts,.jsx,.tsx"
   },
   "dependencies": {
     "@stitches/react": "latest",
@@ -16,6 +17,7 @@
     "dayjs": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "reactive-button": "latest",
     "type-fest": "latest"
   },
   "devDependencies": {
