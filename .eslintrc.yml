@@ -36,3 +36,8 @@ settings:
     '@typescript-eslint/parser':
       - '.ts'
       - '.tsx'
+rules:
+  '@typescript-eslint/no-non-null-assertion': off
+  prefer-const:
+    - warn
+    - destructuring: all

@@ -1,10 +1,5 @@
-# React Vite Starter
+# [p]react vite starter
 
-- [Vite](https://github.com/vitejs/vite) starter preconfigured with [stitches](https://stitches.dev/), React, TypeScript, eslint, and prettier.
-- Project structure based off of [bulletproof-react](https://github.com/alan2207/bulletproof-react).
+- Lighter weight alternative to my [next.js starter](https://github.com/strawhat-dev/next.js-starter) using [Vite](https://github.com/vitejs/vite) and [Preact](https://github.com/preactjs/preact).
 
-Extras:
-
-- [axios](https://github.com/axios/axios)
-- [dayjs](https://github.com/iamkun/dayjs)
-- [type-fest](https://github.com/sindresorhus/type-fest)
+- Project structure based on [Bulletproof React](https://github.com/alan2207/bulletproof-react)

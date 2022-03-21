@@ -1,13 +1,8 @@
-import { StrictMode } from 'react';
-import { render } from 'react-dom';
-import { App } from '@/App';
-import { applyGlobalCSS } from '@/lib/stitches';
+import '@csstools/normalize.css/opinionated.css';
+import { render } from 'preact';
+import { applyGlobalCSS } from '@/config';
+import { App } from './App';
 
 applyGlobalCSS();
 
-render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-  document.getElementById('root')
-);
+render(<App />, document.getElementById('root')!);
