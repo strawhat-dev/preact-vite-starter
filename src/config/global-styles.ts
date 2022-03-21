@@ -24,8 +24,8 @@ export const applyGlobalCSS = globalCss({
     fontFamily: globalFonts.join(','),
   },
   '#App': {
-    minHeight: '100vh',
-    backgroundColor: '$bg',
     color: '$fg',
+    bgColor: '$bg',
+    minHeight: '100vh',
   },
 });
